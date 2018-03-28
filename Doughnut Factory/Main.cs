@@ -16,6 +16,10 @@ namespace Doughnut_Factory
             InitializeComponent();
         }
 
+        private DougnutMachine myDoughnutMachine;
+
+
+
         private void mnuExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -49,6 +53,11 @@ namespace Doughnut_Factory
         private void txtQuantity_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

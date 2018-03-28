@@ -142,5 +142,41 @@ namespace Doughnut_Factory
             }
         }
 
+        public void MakeDoughnuts (DougnutType dFlavor)
+        {
+            Flavor = dFlavor;
+            switch(dFlavor)
+            {
+                case DougnutType.Chocolate:
+                    Inderval = 15000;
+                    break;
+                case DougnutType.ChocoladeCake:
+                    Inderval = 10000;
+                    break;
+                case DougnutType.Custard:
+                    Inderval = 8000;
+                    break;
+                case DougnutType.Glazed:
+                    Inderval = 10000;
+                    break;
+                case DougnutType.Grape:
+                    Inderval = 10000;
+                    break;
+                case DougnutType.Lemon:
+                    Inderval = 8000;
+                    break;
+                case DougnutType.PlainCake:
+                    Inderval = 10000;
+                    break;
+                case DougnutType.Sugar:
+                    Inderval = 10000;
+                    break;
+                case DougnutType.SugarCage:
+                    Inderval = 10000;
+                    break;
+            }
+            Enable = true;
+        }
+
     }
 }
