@@ -148,7 +148,7 @@ namespace Doughnut_Factory
             switch(dFlavor)
             {
                 case DougnutType.Chocolate:
-                    Inderval = 15000;
+                    Inderval = 2000;
                     break;
                 case DougnutType.ChocoladeCake:
                     Inderval = 10000;
@@ -169,7 +169,7 @@ namespace Doughnut_Factory
                     Inderval = 10000;
                     break;
                 case DougnutType.Sugar:
-                    Inderval = 10000;
+                    Inderval = 1000;
                     break;
                 case DougnutType.SugarCage:
                     Inderval = 10000;
