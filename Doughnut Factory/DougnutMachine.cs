@@ -51,12 +51,58 @@ namespace Doughnut_Factory
             }
 
         }
-    
-    }
 
-    public class Dougnut
-    {
-        
-    }
+        public class Dougnut
+        {
+            private DougnutType mFlavor;
+            private float mPrice = .50F;
+            private readonly System.DateTime mTimeofCreation;
 
+            public DougnutType Flavor
+            {
+                get
+                {
+                    return mFlavor;
+                }
+
+                set
+                {
+                    mFlavor = value;
+                }
+
+            }
+
+            public float Price
+            {
+                get
+                {
+                    return mPrice;
+                }
+
+                set
+                {
+                    mPrice = value;
+                }
+
+            }
+
+            public System.DateTime timeofCreation
+            {
+                get
+                {
+                    return mTimeofCreation;
+                }
+            }
+
+            public Dougnut(DougnutType Flavor)
+            {
+                mTimeofCreation = System.DateTime.Now;
+                mFlavor = Flavor;
+            }
+
+        }
+
+
+
+    }
 }
