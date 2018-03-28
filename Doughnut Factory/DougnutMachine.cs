@@ -102,7 +102,45 @@ namespace Doughnut_Factory
 
         }
 
+        private System.Collections.ArrayList mDoughnuts = new System.Collections.ArrayList();
+        public Dougnut this[int Index]
+        {
+            get
+            {
+                return (Dougnut)mDoughnuts[Index];
+            }
+            set
+            {
+                mDoughnuts[Index] = value;
+            }
+        }
 
+        //izveido pashu delegatu
+        public delegate void DoughnutCompliteDelegate();
+        public event DoughnutCompliteDelegate DoughnuntComplite;
+
+        private void timerName_Tick(object sender, EventArgs e)
+        {
+            Dougnut mDoughnut = new Dougnut(this.Flavor);
+            mDoughnuts.Add(mDoughnut);
+            DoughnuntComplite();
+        }
+
+        public bool Enable
+        {
+            set
+            {
+                timerName.Enabled = value;
+            }
+        }
+
+        public int Inderval
+        {
+            set
+            {
+                timerName.Interval = value;
+            }
+        }
 
     }
 }

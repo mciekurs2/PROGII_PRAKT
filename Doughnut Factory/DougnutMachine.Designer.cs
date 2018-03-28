@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timerName = new System.Windows.Forms.Timer(this.components);
+            // 
+            // timerName
+            // 
+            this.timerName.Tick += new System.EventHandler(this.timerName_Tick);
 
         }
 
