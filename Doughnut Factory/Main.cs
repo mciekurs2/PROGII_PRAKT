@@ -135,5 +135,12 @@ namespace Doughnut_Factory
             addNewCustomer.Show();
             this.Hide();
         }
+
+        private void mnuViewCustomers_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViewCustomer viewCustomer = new ViewCustomer();
+            viewCustomer.Show();
+        }
     }
 }

@@ -568,6 +568,7 @@
             this.mnuViewCustomers.Name = "mnuViewCustomers";
             this.mnuViewCustomers.Size = new System.Drawing.Size(180, 22);
             this.mnuViewCustomers.Text = "View Customers";
+            this.mnuViewCustomers.Click += new System.EventHandler(this.mnuViewCustomers_Click);
             // 
             // mnuHelp
             // 
