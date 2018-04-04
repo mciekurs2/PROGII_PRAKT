@@ -128,5 +128,12 @@ namespace Doughnut_Factory
         {
             myDoughnutMachine.Enable = true;
         }
+
+        private void mnuAddaCustomer_Click(object sender, EventArgs e)
+        {
+            AddCustomer addNewCustomer = new AddCustomer();
+            addNewCustomer.Show();
+            this.Hide();
+        }
     }
 }

@@ -69,14 +69,6 @@
             this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuDoughnuts = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMake = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuRemoveStale = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuCustomers = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuAddaCustomer = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuViewCustomers = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuAbout = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuContents = new System.Windows.Forms.ToolStripMenuItem();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.raisedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRaisedGlazzed = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRaisedSugar = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,7 +81,15 @@
             this.lemonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grapeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.custardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuRemoveStale = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStop = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCustomers = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAddaCustomer = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuViewCustomers = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuContents = new System.Windows.Forms.ToolStripMenuItem();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -444,14 +444,108 @@
             this.cakeToolStripMenuItem,
             this.filledToolStripMenuItem});
             this.mnuMake.Name = "mnuMake";
-            this.mnuMake.Size = new System.Drawing.Size(180, 22);
+            this.mnuMake.Size = new System.Drawing.Size(145, 22);
             this.mnuMake.Text = "Make";
+            // 
+            // raisedToolStripMenuItem
+            // 
+            this.raisedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuRaisedGlazzed,
+            this.menuRaisedSugar,
+            this.menuRaisedChocolade});
+            this.raisedToolStripMenuItem.Name = "raisedToolStripMenuItem";
+            this.raisedToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.raisedToolStripMenuItem.Text = "Raised";
+            // 
+            // menuRaisedGlazzed
+            // 
+            this.menuRaisedGlazzed.Name = "menuRaisedGlazzed";
+            this.menuRaisedGlazzed.Size = new System.Drawing.Size(131, 22);
+            this.menuRaisedGlazzed.Text = "Glazzed";
+            this.menuRaisedGlazzed.Click += new System.EventHandler(this.mnuRaisedGlazed_Clicked);
+            // 
+            // menuRaisedSugar
+            // 
+            this.menuRaisedSugar.Name = "menuRaisedSugar";
+            this.menuRaisedSugar.Size = new System.Drawing.Size(131, 22);
+            this.menuRaisedSugar.Text = "Sugar";
+            this.menuRaisedSugar.Click += new System.EventHandler(this.menuRaisedSugar_Click);
+            // 
+            // menuRaisedChocolade
+            // 
+            this.menuRaisedChocolade.Name = "menuRaisedChocolade";
+            this.menuRaisedChocolade.Size = new System.Drawing.Size(131, 22);
+            this.menuRaisedChocolade.Text = "Chocolade";
+            this.menuRaisedChocolade.Click += new System.EventHandler(this.menuRaisedChocolade_Click);
+            // 
+            // cakeToolStripMenuItem
+            // 
+            this.cakeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.plainToolStripMenuItem,
+            this.chocolateToolStripMenuItem,
+            this.sugarToolStripMenuItem1});
+            this.cakeToolStripMenuItem.Name = "cakeToolStripMenuItem";
+            this.cakeToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.cakeToolStripMenuItem.Text = "Cake";
+            // 
+            // plainToolStripMenuItem
+            // 
+            this.plainToolStripMenuItem.Name = "plainToolStripMenuItem";
+            this.plainToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.plainToolStripMenuItem.Text = "Plain";
+            // 
+            // chocolateToolStripMenuItem
+            // 
+            this.chocolateToolStripMenuItem.Name = "chocolateToolStripMenuItem";
+            this.chocolateToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.chocolateToolStripMenuItem.Text = "Chocolate";
+            // 
+            // sugarToolStripMenuItem1
+            // 
+            this.sugarToolStripMenuItem1.Name = "sugarToolStripMenuItem1";
+            this.sugarToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.sugarToolStripMenuItem1.Text = "Sugar";
+            // 
+            // filledToolStripMenuItem
+            // 
+            this.filledToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lemonToolStripMenuItem,
+            this.grapeToolStripMenuItem,
+            this.custardToolStripMenuItem});
+            this.filledToolStripMenuItem.Name = "filledToolStripMenuItem";
+            this.filledToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.filledToolStripMenuItem.Text = "filled";
+            // 
+            // lemonToolStripMenuItem
+            // 
+            this.lemonToolStripMenuItem.Name = "lemonToolStripMenuItem";
+            this.lemonToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.lemonToolStripMenuItem.Text = "Lemon";
+            // 
+            // grapeToolStripMenuItem
+            // 
+            this.grapeToolStripMenuItem.Name = "grapeToolStripMenuItem";
+            this.grapeToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.grapeToolStripMenuItem.Text = "Grape";
+            // 
+            // custardToolStripMenuItem
+            // 
+            this.custardToolStripMenuItem.Name = "custardToolStripMenuItem";
+            this.custardToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.custardToolStripMenuItem.Text = "Custard";
             // 
             // mnuRemoveStale
             // 
             this.mnuRemoveStale.Name = "mnuRemoveStale";
-            this.mnuRemoveStale.Size = new System.Drawing.Size(180, 22);
+            this.mnuRemoveStale.Size = new System.Drawing.Size(145, 22);
             this.mnuRemoveStale.Text = "Remove Stale";
+            // 
+            // menuStop
+            // 
+            this.menuStop.Name = "menuStop";
+            this.menuStop.Size = new System.Drawing.Size(145, 22);
+            this.menuStop.Text = "Stop";
+            this.menuStop.Click += new System.EventHandler(this.menuStop_Click);
             // 
             // mnuCustomers
             // 
@@ -465,13 +559,14 @@
             // mnuAddaCustomer
             // 
             this.mnuAddaCustomer.Name = "mnuAddaCustomer";
-            this.mnuAddaCustomer.Size = new System.Drawing.Size(160, 22);
+            this.mnuAddaCustomer.Size = new System.Drawing.Size(180, 22);
             this.mnuAddaCustomer.Text = "Add a Customer";
+            this.mnuAddaCustomer.Click += new System.EventHandler(this.mnuAddaCustomer_Click);
             // 
             // mnuViewCustomers
             // 
             this.mnuViewCustomers.Name = "mnuViewCustomers";
-            this.mnuViewCustomers.Size = new System.Drawing.Size(160, 22);
+            this.mnuViewCustomers.Size = new System.Drawing.Size(180, 22);
             this.mnuViewCustomers.Text = "View Customers";
             // 
             // mnuHelp
@@ -498,100 +593,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // raisedToolStripMenuItem
-            // 
-            this.raisedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuRaisedGlazzed,
-            this.menuRaisedSugar,
-            this.menuRaisedChocolade});
-            this.raisedToolStripMenuItem.Name = "raisedToolStripMenuItem";
-            this.raisedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.raisedToolStripMenuItem.Text = "Raised";
-            // 
-            // menuRaisedGlazzed
-            // 
-            this.menuRaisedGlazzed.Name = "menuRaisedGlazzed";
-            this.menuRaisedGlazzed.Size = new System.Drawing.Size(180, 22);
-            this.menuRaisedGlazzed.Text = "Glazzed";
-            this.menuRaisedGlazzed.Click += new System.EventHandler(this.mnuRaisedGlazed_Clicked);
-            // 
-            // menuRaisedSugar
-            // 
-            this.menuRaisedSugar.Name = "menuRaisedSugar";
-            this.menuRaisedSugar.Size = new System.Drawing.Size(180, 22);
-            this.menuRaisedSugar.Text = "Sugar";
-            this.menuRaisedSugar.Click += new System.EventHandler(this.menuRaisedSugar_Click);
-            // 
-            // menuRaisedChocolade
-            // 
-            this.menuRaisedChocolade.Name = "menuRaisedChocolade";
-            this.menuRaisedChocolade.Size = new System.Drawing.Size(180, 22);
-            this.menuRaisedChocolade.Text = "Chocolade";
-            this.menuRaisedChocolade.Click += new System.EventHandler(this.menuRaisedChocolade_Click);
-            // 
-            // cakeToolStripMenuItem
-            // 
-            this.cakeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.plainToolStripMenuItem,
-            this.chocolateToolStripMenuItem,
-            this.sugarToolStripMenuItem1});
-            this.cakeToolStripMenuItem.Name = "cakeToolStripMenuItem";
-            this.cakeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cakeToolStripMenuItem.Text = "Cake";
-            // 
-            // plainToolStripMenuItem
-            // 
-            this.plainToolStripMenuItem.Name = "plainToolStripMenuItem";
-            this.plainToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.plainToolStripMenuItem.Text = "Plain";
-            // 
-            // chocolateToolStripMenuItem
-            // 
-            this.chocolateToolStripMenuItem.Name = "chocolateToolStripMenuItem";
-            this.chocolateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.chocolateToolStripMenuItem.Text = "Chocolate";
-            // 
-            // sugarToolStripMenuItem1
-            // 
-            this.sugarToolStripMenuItem1.Name = "sugarToolStripMenuItem1";
-            this.sugarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.sugarToolStripMenuItem1.Text = "Sugar";
-            // 
-            // filledToolStripMenuItem
-            // 
-            this.filledToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lemonToolStripMenuItem,
-            this.grapeToolStripMenuItem,
-            this.custardToolStripMenuItem});
-            this.filledToolStripMenuItem.Name = "filledToolStripMenuItem";
-            this.filledToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.filledToolStripMenuItem.Text = "filled";
-            // 
-            // lemonToolStripMenuItem
-            // 
-            this.lemonToolStripMenuItem.Name = "lemonToolStripMenuItem";
-            this.lemonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.lemonToolStripMenuItem.Text = "Lemon";
-            // 
-            // grapeToolStripMenuItem
-            // 
-            this.grapeToolStripMenuItem.Name = "grapeToolStripMenuItem";
-            this.grapeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.grapeToolStripMenuItem.Text = "Grape";
-            // 
-            // custardToolStripMenuItem
-            // 
-            this.custardToolStripMenuItem.Name = "custardToolStripMenuItem";
-            this.custardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.custardToolStripMenuItem.Text = "Custard";
-            // 
-            // menuStop
-            // 
-            this.menuStop.Name = "menuStop";
-            this.menuStop.Size = new System.Drawing.Size(180, 22);
-            this.menuStop.Text = "Stop";
-            this.menuStop.Click += new System.EventHandler(this.menuStop_Click);
             // 
             // frmMain
             // 
